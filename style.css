@@ -14,8 +14,8 @@ body{
     min-height: 100vh;
     min-width: 100vw;
     display: grid;
-    grid-template-columns: 23% 1fr 1fr 1fr;
-    grid-template-rows:  17% 1fr 1fr 1fr;
+    grid-template-columns: 26em 1fr 1fr 1fr;
+    grid-template-rows:  17em 1fr 1fr 1fr;
 }
 
 .sidebar{
@@ -66,7 +66,7 @@ h1{
 }
 
 .search{
-    width: 100%;
+    width: 75em;
     height: 2.25rem;
     border: none;
     outline: none;
@@ -215,7 +215,9 @@ h1{
 .announcements article{
     padding: 1rem 0;
     border-bottom: 1px solid white;
+    filter: brightness(0.85);
 }
+
 
 .announcements h4{
     margin: 0 0 0.25rem 0;
@@ -240,4 +242,35 @@ h1{
     display: grid;
     gap: 0.75rem;
     align-items: center;
+}
+
+profile{
+    display: grid;
+    grid-template-rows: 25px 25px;
+    grid-template-columns: 4.25em 1fr 1fr;
+    background-color: white;
+    padding: 0.25em;
+}
+
+profile:hover{
+    filter: brightness(0.95);
+    cursor: pointer;
+}
+
+profile img{
+    grid-row: 1 / span 2;
+    border-radius: 50%;
+}
+
+profile span{
+    font-size: 14px;
+    color: rgb(133, 132, 132);
+    grid-column: 2 / span 2;
+}
+
+.profile-name{
+    display: grid;
+    grid-column: 2 / span 2;
+    color: black;
+    font-size: 17px;
 }
