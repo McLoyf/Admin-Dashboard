@@ -44,11 +44,50 @@ h1{
 .header{
     display: grid;
     background-color: red;
+    padding: 1.25rem 2rem;
+    gap: 1.25rem;
+    grid-template-rows: auto auto;
+    box-shadow: 0 2px 8px black;
+}
+
+.header-top{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-form{
+    width: 100%;
+    max-width: 700px;
 }
 
 .search{
-    width: 40%;
-    height: 1.5em;
-    margin: 1.5em 3em 0em 5em;
-    border-radius: 10px;
+    width: 100%;
+    height: 2.25rem;
+    border: none;
+    outline: none;
+    background: white;
+    border-radius: 999px;
+    padding: 0 1rem;
+    margin: 0;
+}
+
+.user-info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+}
+
+.notifications{
+    font-size: 1.25rem;
+}
+
+.avatar{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: white;
+    display: inline-block;
 }
