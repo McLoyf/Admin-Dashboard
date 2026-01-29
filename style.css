@@ -24,10 +24,6 @@ body{
     grid-row: 1 / -1;
 }
 
-.main{
-    grid-column: 2 / -1;
-    grid-row: 1 / -1;
-}
 
 a{
     color: white;
@@ -150,4 +146,91 @@ h1{
 
 .header-actions button:hover{
     filter: brightness(0.95);
+}
+
+.content{
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+   gap: 2rem;
+   align-items: start;
+   padding: 2rem;
+   background-color: aqua;
+   grid-area: 2 / 2 / span 3 / span 3;
+}
+
+.projects h2{
+    margin: 0 0 1rem 0;
+    font-size: 1.25rem;
+}
+
+.projects-list{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-list article{
+    background: red;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 3px 10px rbga(0,0,0,0.12);
+    position: relative;
+    min-height: 170px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 0.5rem;
+}
+
+.project-list article h3{
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+.right-sidebar{
+    display: grid;
+    gap: 2rem;
+    background-color: crimson;
+}
+
+.announcements, .trending{
+    background: darkcyan;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+}
+
+.announcements h2, .trending h2{
+    margin: 0 0 1rem 0;
+    font-size: 1.25rem;
+}
+
+.announcements article{
+    padding: 1rem 0;
+    border-bottom: 1pc solid white;
+}
+
+.announcements h4{
+    margin: 0 0 0.25rem 0;
+    font-size: 0.95rem;
+}
+
+.announcements p{
+    margin: 0;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.trending ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 1rem;
+}
+
+.trending li{
+    display: grid;
+    grid-template-columns: 44px 1fr;
+    gap: 0.75rem;
+    align-items: center;
 }
