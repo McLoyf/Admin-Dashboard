@@ -23,7 +23,6 @@ body{
     grid-row: 1 / 2;
 }
 
-
 li {
     list-style: none;
     height: 3rem;
@@ -70,8 +69,12 @@ h1{
 }
 
 .search-form{
-    width: 100%;
-    max-width: 700px;
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  align-items: center;
+  column-gap: 0.75rem;
+  width: 100%;
+  max-width: 700px;
 }
 
 .search{
@@ -86,6 +89,23 @@ h1{
     margin: 0;
 }
 
+#search-icon{
+  width: 20px;
+  height: 20px;
+  justify-self: center;
+  color: black;
+}
+
+.search{
+  width: 100%;
+  height: 2.25rem;
+  border: none;
+  outline: none;
+  border-radius: 999px;
+  padding: 0 1rem;
+  margin: 0;
+}
+
 .user-info{
     display: flex;
     align-items: center;
@@ -93,7 +113,7 @@ h1{
     font-weight: 600;
 }
 
-.avatar{
+.avatar img{
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -117,9 +137,9 @@ h1{
     align-items: center;
 }
 
-.avatar-large{
-    width: 72px;
-    height: 72px;
+.avatar-large img{
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     background: grey;
     grid-row: 1 / span 2;
@@ -135,6 +155,7 @@ h1{
     margin: 0;
     font-size: 1.5rem;
     line-height: 1.1;
+    grid-column-end: 3;
 }
 
 .header-actions{
