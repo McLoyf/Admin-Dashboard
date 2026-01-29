@@ -188,14 +188,18 @@ h1{
     transform: scale(0.98);
 }
 
-.user-info svg:hover{
+#bell:hover{
     cursor: pointer;
     filter: contrast(1);
     transform: scale(0.99);
 }
 
-.user-info svg.clicked{
-    fill: currentColor;
+#bell{
+    fill: none;
+}
+
+#bell.filled{
+    fill: black;
 }
 
 .content{
