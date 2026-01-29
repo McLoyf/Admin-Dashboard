@@ -93,10 +93,6 @@ h1{
     font-weight: 600;
 }
 
-.notifications{
-    font-size: 1.25rem;
-}
-
 .avatar{
     width: 44px;
     height: 44px;
@@ -212,6 +208,18 @@ h1{
 .project-list article h3{
     margin: 0;
     font-size: 1.05rem;
+}
+
+.project-list article::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  background: #f0b429; /* warm yellow */
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
 }
 
 .right-sidebar{
