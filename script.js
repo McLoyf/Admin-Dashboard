@@ -1,10 +1,12 @@
-const star = document.getElementById('star');
+const stars = document.querySelectorAll('.star');
 const bell = document.getElementById('bell');
-
-star.addEventListener('click', function() {
-    star.classList.toggle("filled");
-});
 
 bell.addEventListener('click', function() {
     bell.classList.toggle("filled");
 });
+
+stars.forEach(star => {
+    star.addEventListener("click", () => {
+        star.classList.toggle("filled");
+    })
+})

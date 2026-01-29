@@ -268,21 +268,21 @@ h1{
     margin-right: 0;
 }
 
-#star path{
+.star path{
     fill: none;
-    stroke: '#1992d4';
+    stroke: '#e66d2b';
     transition: fill 0.2s ease;
 }
 
-#star:hover{
+.star:hover{
     filter: invert(1);
     fill: currentColor;
     cursor: pointer;
 }
 
-#star.filled path{
-    fill: #e66d2b;
-    stroke: #e66d2b;
+.star.filled path{
+    fill: #1992d4;
+    stroke: #1992d4;
 }
 
 .right-sidebar{
