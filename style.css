@@ -14,14 +14,14 @@ body{
     min-height: 100vh;
     min-width: 100vw;
     display: grid;
-    grid-template-columns: 26em 1fr 1fr 1fr;
-    grid-template-rows:  17em 1fr 1fr 1fr;
+    grid-template-columns: repeat(6, 16.6vw);
 }
 
 .sidebar{
     background-color: rgb(29, 169, 216);
     grid-column: 1;
     grid-row: 1 / -1;
+
 }
 
 .main{
@@ -66,7 +66,8 @@ h1{
 }
 
 .search{
-    width: 75em;
+    width: 100%;
+    max-width: 700px;
     height: 2.25rem;
     border: none;
     outline: none;
@@ -162,7 +163,12 @@ h1{
    align-items: start;
    padding: 2rem;
    background-color: rgb(207, 212, 229);
-   grid-area: 2 / 1 / span 3 /span 3;
+   grid-area: 2 / 1 / span 3 / span 3;
+}
+
+.projects{
+    display: grid;
+    grid-column: 1 / span 2;
 }
 
 .projects h2{
@@ -174,15 +180,16 @@ h1{
     display: grid;
     grid-template-columns: repeat(2, minmax(260px, 1fr));
     gap: 1.5rem;
+
 }
 
 .project-list article{
     background: white;
     border-radius: 12px;
-    padding: 1.5rem;
+    padding: 1.25rem;
     box-shadow: 0 3px 10px rgba(0,0,0,0.12);
     position: relative;
-    min-height: 170px;
+    min-height: 140px;
     display: grid;
     grid-template-rows: auto 1fr auto;
     gap: 0.5rem;
@@ -197,7 +204,7 @@ h1{
     display: grid;
     gap: 2rem;
     background-color: rgb(207, 212, 229);
-    grid-column: 2;
+    grid-column: 3;
 }
 
 .announcements, .trending{
@@ -205,6 +212,7 @@ h1{
     border-radius: 12px;
     padding: 1.5rem;
     box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+    width: 10vw;
 }
 
 .announcements h2, .trending h2{
