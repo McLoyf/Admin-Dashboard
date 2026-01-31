@@ -273,7 +273,7 @@ h1{
 
 .project-list article:hover{
     transform: scale(1.01);
-    box-shadow: 0 4px 8px rbga(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     cursor: pointer;
 }
 
